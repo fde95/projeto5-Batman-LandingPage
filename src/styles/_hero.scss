@@ -1,0 +1,33 @@
+@use 'variaveis';
+
+.hero{
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../images/Hero/hero_desktop_image.png);
+    text-align: center;
+    background-size: cover;
+    position: relative;
+
+    &__content{
+        max-width: 640px;
+        margin-top: 200px;
+        
+        &__branding{
+            max-width: 524px;
+            margin: 0 auto 30px;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .light{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.95) 20%);
+    }
+}

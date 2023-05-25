@@ -1,0 +1,84 @@
+@use 'variaveis';
+@use 'hero';
+@use 'about';
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: variaveis.$corFundo;
+    color: variaveis.$corTextoPrincipal ;
+    font-family: variaveis.$fontPrincipal;
+}
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    font-weight: 400;
+    color: variaveis.$corTextoPrincipal;
+}
+
+.text--big{
+    @include text (20px);
+    @media (max-width: 768px){
+        @include text(15px);
+    }
+}
+.text{
+    @include text;
+    @media (max-width: 768px){
+        @include text(14px);
+    }
+}
+.text--small{
+    @include text (12px);
+    font-weight: 300;
+    @media (max-width: 768px){
+        @include text(11px);
+    }
+}
+
+.link-text{
+    @include text (16px);
+    color: variaveis.$corTextoSecundario;
+    text-decoration: underline;
+}
+.text--faq{
+    @include text (20px);
+    color: variaveis.$corTextoSecundario;
+    @media (max-width: 768px){
+        @include text(15px);
+        color: variaveis.$corTextoSecundario;
+    }
+}
+
+
+@mixin title($fontSize: 40px){
+    @include text($fontSize);
+    font-weight: 700;
+    color: variaveis.$corTextoSecundario;
+}
+.title--big{
+    @include title(44px);
+    font-weight: 900;
+    @media (max-width: 768px){
+        @include title(26px);
+    }
+}
+.title{
+    @include title;
+    font-weight: 400;
+    @media (max-width: 768px){
+        @include title(24px);
+    }
+}
+.title--small{
+    @include title(28px);
+    font-weight: 300;
+    @media (max-width: 768px){
+        @include title(22px);
+    }
+}
