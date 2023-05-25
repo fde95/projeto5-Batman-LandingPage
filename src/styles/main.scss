@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'hero';
-@use 'about';
+@use 'shows';
+@use 'header';
 
 *{
 margin: 0;
@@ -80,5 +81,50 @@ body{
     font-weight: 300;
     @media (max-width: 768px){
         @include title(22px);
+    }
+}
+
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: variaveis.$corTextoSecundario;
+    background-color: variaveis.$buttonColorHover;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corFundo;;
+
+    &:hover{
+        background-color: lighten(variaveis.$buttonColorHover, 3%);
+    }
+
+    &--secundary{
+        background-color: variaveis.$buttonColorHover;
+        border-color: variaveis.$buttonColorHover;
+        color: variaveis.$corFundo;
+
+        &:hover{
+            background-color:darken(variaveis.$buttonColorHover, 3%);
+        }
+    }
+
+    &--dark{
+        background-color: rgba(variaveis.$corFundo, 0.8);
+        border-color: variaveis.$corTextoSecundario;
+
+        &:hover{
+            background-color: variaveis.$corTextoSecundario;
+            color: variaveis.$corFundo;
+            transition: .4s ease;
+        }
     }
 }

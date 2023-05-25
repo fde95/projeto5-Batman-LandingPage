@@ -12,25 +12,103 @@
     <title>Cavaleiro das Sombras</title>
 </head>
 <body>
-    <header>
-
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/header/headerImg.jpg" alt="Batman">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button button--secundary" href="#hero">Voltar ao topo</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button button--dark" href="https://linktr.ee/fde95" target="_blank">Desenvolvedor</a>
+                </li>
+            </ul>
+        </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero__content">
             <div class="light"></div>
             <div class="hero__content__branding">
-                <img src="./dist/images/Logo/logo_bc.png" alt="Batman Forever">
+                <img src="./dist/images/Logo/logo_pt.png" alt="Batman Forever">
             </div>
-            <h3 class="title--small">“We all wear masks.”</h3>
+            <h3 class="title--small">A noite é mais sombria um pouco antes do amanhecer.</h3>
         </div>
     </section>
 
-    <section class="about">
-        <h1>
-            teste mil
-        </h1>
+    <section class="shows">
+        <h2 class="title--big">O Cavaleiro das Trevas</h2>
+        <p class="text">
+            Criado pelos artistas Bob Kane e Bill Finger, Batman teve a sua primeira aparição nos quadrinhos “Detective Comics” (DC), na edição número 27, em março de 1939. Desde, então, passou a fazer sucesso na TV (anos 60) e no cinema (a partir de 1989). O herói ganhou até o Emmy, o maior prêmio de programas e profissionais da televisão. No cinema, Batman já foi interpretado pelos atores Adam West, Michael Keaton, Val Kilmer, George Clooney, Christian Bale e Ben Affleck.
+        </p>
+        <nav class="shows__tabs">
+            <button data-tab-button="populares" class="shows__tabs__button shows__tabs__button--is--active">
+                Filmes Populares
+            </button>
+            <button data-tab-button="quadrinhos" class="shows__tabs__button">
+                Quadrinhos
+            </button>
+        </nav>
+        <ul data-tab-id="populares" class="shows__list shows__list--is--active">
+            <li class="shows__list__item">
+                <img src="./dist/images/Mais Populares/batman.png" alt="Batman">
+                <p class="text--small">
+                    Batman - 1989
+                </p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Mais Populares/batmanBegins.png" alt="Batman Begins">
+                <p class="text--small">
+                    Batman Begins - 2005
+                </p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Mais Populares/batmanCavaleirodasTrevas.png" alt="Batman Cavaleiro das trevas">
+                <p class="text--small">
+                    Batman o Cavaleiro das Trevas - 2008
+                </p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Mais Populares/batmanERobin.png" alt="Batman e Robin">
+                <p class="text--small">
+                    Batman e Robin - 1997
+                </p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Mais Populares/batmanEternal.png" alt="Batman Eternal">
+                <p class="text--small">
+                    Batman Eternamente - 1995
+                </p>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Mais Populares/batmanVSsuperman.png" alt="Batman VS Superman">
+                <p class="text--small">
+                    Batman VS Superman - 2016
+                </p>
+            </li>
+        </ul>
+        <ul data-tab-id="quadrinhos" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="Belair">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Liberadores">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="NBA">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="Os Simpsons">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="Premier League">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="The Kardashians">
+            </li>
+        </ul>
     </section>
-    
 
     <script src="./dist/js/main.js"></script>
 </body>
