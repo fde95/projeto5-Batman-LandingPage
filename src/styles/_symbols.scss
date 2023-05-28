@@ -19,10 +19,42 @@
         padding: 0 60px;
     }
 
-    
     &__carousel{
-        width: 100%;
+
+        p{
+            text-align: center;
+            padding: 0;
+            margin-bottom: 0;
+            margin-top: 8px;
+            margin-right: 113px;
+        }
+        
     }
 }
 
+    
+.slick-slide{
+    width: 100%;
+    opacity: 2%;
+    transition: 2s ease;
+    p{
+        transition: 1s ease;
+    }
 
+
+    &:hover{
+        transition: 2s ease;
+        opacity: 100%;
+        p{
+            font-size: 18px;
+            transition: 1s ease;
+        }
+    }
+}
+
+.slick-center{
+    opacity: 100%;
+    p{
+        font-size: 18px;
+    }
+}
