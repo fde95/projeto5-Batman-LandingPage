@@ -53,7 +53,7 @@
 .slick-slide{
     width: 100%;
     opacity: 2%;
-    transition: 2s ease;
+    transition: 1s ease;
     img{
         @media (max-width: 768px){
             width: 100%;
@@ -70,8 +70,11 @@
 
 
     &:hover{
-        transition: 2s ease;
+        transition: 1s ease;
         opacity: 100%;
+        @media (max-width: 768px){
+            transition: .01s ease;
+        }
         p{
             font-size: 18px;
             transition: 1s ease;
