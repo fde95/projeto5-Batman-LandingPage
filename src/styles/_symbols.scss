@@ -1,0 +1,28 @@
+@use 'variaveis';
+
+
+.symbol{
+    padding: 5.6vw;
+    min-height: 80vh;
+
+
+    h2{
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        text-align: center;
+        color: variaveis.$buttonColorHover;
+    }
+    p{
+        text-align: justify;
+        text-transform: uppercase;
+        margin-bottom: 80px;
+        padding: 0 60px;
+    }
+
+    
+    &__carousel{
+        width: 100%;
+    }
+}
+
+

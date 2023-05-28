@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroSection = document.querySelector('.hero');
     const alturaHero = heroSection.clientHeight;
 
+    
+$('.symbol__carousel').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+});
+
     window.addEventListener('scroll', function(){
         const posicaoAtual = window.scrollY;
 
