@@ -8,9 +8,49 @@
     background-size: cover;
     position: relative;
 
+    @media (max-width: 768px){
+        background-image: url(../images/Hero/backgroundAbout_mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 90vh;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1022px){
+        background-image: url(../images/Hero/backgroundAbout_tablet.png);
+        padding-top: calc(50vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -80px;
+    }
+
+    h3{
+        @media (max-width: 768px){
+            font-size: 10px;
+            margin-top: -20px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1022px){
+            font-size: 24px;
+        }
+    }
+
     &__content{
         max-width: 640px;
         margin-top: 200px;
+
+        @media (max-width: 768px){
+            margin-top: 400px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1022px){
+            max-width: 100%;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 220px;
+            margin-bottom: 150px;
+            
+        }
         
         &__branding{
             max-width: 524px;
@@ -21,6 +61,8 @@
             }
         }
     }
+
+    
     .light{
         position: absolute;
         top:0;
@@ -29,5 +71,12 @@
         height: 100%;
         pointer-events: none;
         background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.95) 20%);
+        @media (max-width: 768px){
+            display: none;
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1022px){
+            display: none;
+        }
     }
 }
