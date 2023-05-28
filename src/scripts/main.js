@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.symbol__carousel').slick({
         centerMode: true,
         centerPadding: '60px',
+        autoplay: true,
         slidesToShow: 5,
         responsive: [
         {
